@@ -1,0 +1,902 @@
+<title>FORTURSHOP</title>
+<html>
+
+<head>
+<br>
+
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@600;800&display=swap" rel="stylesheet">
+
+
+<style type="text/css">*
+.mdr-container{
+  margin-top: 0px;
+  padding:0px;
+  padding-bottom:0px;
+  background-image:transparent;
+  border:0.0px solid #ffffff;
+  border-radius:0px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.0);
+  
+}
+
+.header{
+  padding-bottom: 10px;
+  
+  left: -30px;
+  padding: 15px;
+  z-index: 1;
+  
+  border-radius: 10px;
+  position-bottom: absolute;
+  background: #26a69a;
+}
+border: #26a69a solid 3px;border-radius: 100px;left:  10px;margin:0;width:45px;top: 13px;position: absolute;"
+
+</style>
+
+
+
+<div class="admin" style="background: transparent;z-index: 1;left: 55px;font-size: 20px;color: #fff;position: absolute;top: 10px;"></div>
+
+<div class="ard" style="border-top-right-radius: 0px;margin-top: 140;">
+
+
+<!--NAMA USER-->
+<div class="mybutton1" style="top: 57px;position: absolute;index: 2;padding: 13px;padding-left: 5px;border-radius:13px;height: 110px;">
+				
+				
+
+<div class="admin" style="margin-left: 15px;margin-top: 0px;z-index: 0;font-size: 15px;color: #000;font-weight:bold">Saldo Saya</div>
+
+<div class="admin" id="saldo_user" style="margin-left: 15px;
+margin-top: -5px;
+z-index: 0;
+font-size: 20px;
+color: #283593;
+font-family: 'Urbanist', sans-serif;
+font-weight:bold"><id="saldo_user">Rp {{saldo_user}}</div>
+<img class="gambarsld" src="https://i.ibb.co/vwFrZfx/megaphone-1.png">
+<marquee>
+  <div class="sldp">Halo, {{nama_user}} Sekarang Waktu Operasional Forturshop Jam : 08:00-22:00</div>
+</marquee>
+
+<!--ICON Transfer-->
+<a href="https://forturshop.jualan.me/digital/138511">
+<img class="gambardeposit" style="border-radius: 7px;right: 15px;width:35px;top: 10px;position: absolute;" src="https://i.ibb.co/MCBVgKd/20220416-021653.png"></a>
+<div class="admin" style="color:#595959;background: transparent;right: 13px;position: absolute;top: 45px;font-size: 10px;">Transfer</div>
+
+
+<!-- deposit -->
+
+<a onclick="httpskiosidbukaolshopsiteakunlogin()">
+<img class="gambardeposit" style="border-radius: 7px;right: 75px;width:35px;top: 10px;position: absolute;" src="https://i.ibb.co/F4ybWJF/20220416-020956.png"></a>
+<div class="admin" style="color:#595959;background: transparent;right: 78px;position: absolute;top: 45px;font-size: 10px;">Topup</div>
+
+<!--ICON Transfer-->
+<a href="https://forturshop.jualan.me/akun/?page=saldo_history">
+<img class="gambardeposit" style="border-radius: 7px;right: 135px;width:35px;top: 10px;position: absolute;" src="https://i.ibb.co/KbjSzRf/history-2.png"></a>
+<div class="admin" style="color:#595959;background: transparent;right: 132px;position: absolute;top: 45px;font-size: 10px;">Riwayat</div>
+
+
+
+<a href="https://forturshop.jualan.me/pages?kontak">     			
+<img class="gambar" style="box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);z-index: 30;border-radius: 10px;right: 15px;width:25px;top: -40px;position: absolute;" src="https://i.postimg.cc/9QP4T7s2/20220416-035447.png"></a>
+
+<div class="admin" style="background: transparent;z-index: 30;right: 46px;text-align:right;font-size: 11px;color: #fff;position: absolute;top: -45px;">Hubungi</p>Kami</div> 
+
+<img class="gambar" style="box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);z-index: 30;border-radius: 10px;left: 14px;width:30px;top: -40px;position: absolute;" src="https://i.postimg.cc/j5GvBgPV/20220416-055126.png">
+
+<div class="admin" style="background: transparent;z-index: 30;left: 50px;font-size: 15px;color: #fff;position: absolute;top: -40px;font-family: sans-serif;">FORTURSHOP</div>
+
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+* {
+margin: 0px;
+margin-top: -1px;
+}
+
+body {
+background: #fff;}
+     
+.button {
+  font-size: 10px;
+  font-family: arial;
+  text-decoration: none;
+  outline: none;
+  color: #595959;
+  background-color: transparent;
+  border: none;
+  width: 19%;
+  margin: 5px;
+  margin-bottom: 15px;
+}
+
+.dropdown {
+ font-size: 10px;
+ text-decoration: none;
+ outline: none;
+ color: #fff;
+ border: none;
+ border-radius: 15px;
+ width: 18%;
+ font-weight: bold;
+ display: inline;
+}
+
+.dropdown-content{
+ display: none;
+ position: absolute;
+ box-shadow: 2px 0px 1000px 500px rgba(0,0,0,0.35);
+ -webkit-box-shadow: 2px 0px 1000px 500px rgba(0,0,0,0.35);
+ -moz-box-shadow: 2px 0px 1000px 200px 5gba(0,0,0,0.35);
+ z-index: 1;
+ width: auto;
+ background: #fff;
+ border-radius: 25px;
+ padding-top: 10px;
+ width: 100%;
+ left: 5%;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.image {
+ border-radius: 15px;
+ width: 90%;
+ border: 1px solid rgba(235, 235, 235, 0.718);
+ background: #fff;
+ box-shadow: rgb(220, 220, 233) 1px 2px 3px;
+ margin-bottom: 5px;
+ padding:8px;
+}
+
+
+.kosong {
+ border-radius: 23px;
+ width: 100%;
+ padding: 10px;
+ margin-bottom: 5px;
+}
+
+.ard {
+ background: #fff;
+ margin-bottom: 11px;
+ padding-top: 1px;
+ padding-bottom: 10px;
+ z-index: 1;
+ box-shadow: 0px 0.3px 1px 1px rgba(0,0,0,0.05);
+}
+
+.image:hover {box-shadow: 0px 0px 5px -2px rgba(0,0,0,0.7);}
+
+.mybutton1{
+ box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.35);
+ float: center;
+ border-radius: 8px;
+ padding: 30px;
+ z-index: 1;
+ width: 93%;
+ top: 10px; 
+ right:3.5%;;
+ left: 3.5%;
+ background: #fff;
+}
+
+
+.tooltip a {
+  cursor: none;
+}
+
+.tooltip .tooltiptext {
+ visibility: hidden;
+ width: 100%;
+ max-width: 90%;
+ text-align: center;
+ border-radius: 6px;
+ position: absolute;
+ display: block;
+ z-index: 1;
+ left: 5%;
+ margin-top: 10px;
+ margin-left: 0px;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.label {
+ background-color:#ff0000;
+ border-radius:100px;
+ cursor:pointer;
+ color:#ffffff;
+ font-size: 13px;
+ font-family: arial;
+ text-decoration:none;
+ box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+ font-weight: bold;
+ padding: 4px;
+}
+
+.imgtool {
+ margin-left: 0px;
+ box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.4);
+ border-radius: 20px;
+ box-shadow: 2px 0px 1000px 500px rgba(0,0,0,0.35);
+ -webkit-box-shadow: 2px 0px 1000px 500px rgba(0,0,0,0.35);
+ -moz-box-shadow: 2px 0px 1000px 200px 5gba(0,0,0,0.35);
+}
+
+.tittle { 
+ font-size: 18px; 
+ color: #4a494d; 
+ font-family: 'Urbanist', sans-serif;
+ border-radius: 20px;
+ padding: 5px;
+ margin-top: -5px; 
+ margin-bottom: 10px; 
+ margin-left: 15px;
+ margin-right:8px; 
+ font-weight: 700;
+} 
+
+.subtittle { 
+ font-size: 15px;
+ font-weight: bold;
+ color: #000;
+ font-family: arial;
+ border-radius: 20px;
+ padding: 5px;
+ margin-top: 10px;
+ background: #f7f7f7;
+ margin-bottom: 10px;
+ width: 50%;
+ text-align: center;
+ margin-left: 8px;
+ margin-right:8px;
+}
+
+.gambarsld {
+ width: 40px;
+ right: 33px;
+ top: 0px;
+ margin-left: 15px;
+ border-radius: 7px
+}
+
+.gambar {
+ width: 60px;
+ right: 33px;
+ position: absolute;
+ top: 20px;
+ border-radius: 7px
+}
+.gambardeposit {
+ border: 1px solid rgba(235, 235, 235, 0.718);
+ background: #fff;
+ box-shadow: rgb(220, 220, 233) 1px 2px 3px;
+ width: 60px;
+ right: 33px;
+ position: absolute;
+ top: 20px;
+ border-radius: 7px
+}
+
+.gambar1 {
+ border-radius: 15px;
+ border: #f5f5f5 solid 1px;
+ width: 100%;
+ padding: 10px;
+ box-shadow: 0.6px 0.6px 4px -1.5px rgba(0,0,0,0.9);
+cursor:none;
+ margin-bottom: 5px;
+}
+
+.sldp {
+ background-color:transparent;
+ font-family: 'Urbanist', sans-serif;
+ border-radius:7px;
+ color:#673ab7;
+ font-size: 15px;
+ text-decoration:none;
+ padding: 4px 1px 4px 0px;
+}
+
+.admin {
+ background-color:transparent;
+ font-family: 'Urbanist', sans-serif;
+ border-radius:7px;
+ color:#673ab7;
+ font-size: 13px;
+ text-decoration:none;
+ padding: 4px 1px 4px 0px;
+}
+
+    /*GESER SAMPING*/
+    div.scrollmenu {
+      background-color: transparent;
+      overflow: auto;
+      white-space: nowrap;
+        margin-left: 15px;
+        padding: 10px;
+    }
+
+    /*MENU SCROLL KESAMPING*/
+div.scrollmenu a {
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 10px;
+    }
+
+    /*LATAR GESER SAMPING*/
+    .button22 {
+      font-size: 11px;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #fff;
+      border: none;
+      border-radius: 15px;
+      width: 30%;
+      padding: 5px;
+      margin-right: 10px;
+      box-shadow: 0px 0px 6px -3px rgba(0,0,0,0.9);  
+    }
+
+    /*GAMBAR SCROOL SAMPING*/
+    .image22 {
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 5px;margin-top: 5px;
+     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.0);  
+    }
+    
+</style>
+<style>
+
+.sidenav {
+  height: 250px;
+  width: 0px;
+  position: fixed;
+  z-index: 30;
+  top: 50px;
+  left: 0px;
+  margin-right:5px;
+background-image:linear-gradient(#283593,#283593);
+  overflow-x: hidden;
+  transition: 0.7s;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px rgba(1,1,1,0.3);   
+}
+.sidenav a {
+  padding: 0px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #5FB2FF;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #26a69a;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 50px;
+  color: red;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px 1px rgba(1,1,1,0.3); 
+  padding:10px;
+  border-radius: 50px;
+  width: 7%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}}
+.image {
+ border-radius: 15px;
+ width: 100%;
+ background: #fff;
+ padding:10px;
+}
+
+.kosong {
+ border-radius: 23px;
+ width: 100%;
+ padding: 10px;
+ margin-bottom: 5px;
+}
+
+.ard {
+ background: transparent;
+ margin-bottom: 7px;
+ padding-top: 1px;
+ padding-bottom: 5px;
+ z-index: 1;
+}
+
+.daftar {
+  height: 48px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  padding-top:5px;
+box-shadow: 2px 2px 5px 2px rgba(1,1,1,0.3); 
+}
+
+.gambarlist {
+  width:30px;
+  margin-top: 4px;
+  margin-left: 5px;
+  background: none;
+  border-radius: 1px;
+}
+
+.list {
+  margin-left:15px;
+  font-weight: 800;
+  font-family: 'Urbanist', sans-serif;
+  color: #000000;
+  margin-top: 10px;
+  font-size: 15px;
+  display: inline;
+  background: transparent;
+  position: absolute;
+}
+
+.kiosid {
+  background:Transparent;
+  padding-left:15px;
+  padding-right:15px;
+  border: 10px dot #fff;
+  z-index: 0;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.harga {
+  margin-left:10px;
+  font-weight: 400;
+  font-family: 'arial', sans-serif;
+  margin-top: 7px;
+  width:15%;
+  right: 27px;
+  padding: 5px;
+  color: #fff;
+  font-size: 13px;
+  display: inline;
+  background: #42a5f5;
+  border-radius: 5px;
+  position: absolute;
+  text-align: center;
+}
+.harga1 {
+  margin-left:10px;
+  font-weight: ;
+  font-family: 'arial', sans-serif;
+  margin-top: 7px;
+  width:15%;
+  right: 27px;
+  padding: 5px;
+  color: #fff;
+  font-size: 13px;
+  display: inline;
+  background: red;
+  border-radius: 5px;
+  position: absolute;
+  text-align: center;
+}
+.texp {
+font-size: 20px;
+}
+.harga2 {
+  margin-left:10px;
+  font-weight: ;
+  font-family: 'arial', sans-serif;
+  margin-top: 7px;
+  width:17%;
+  right: 27px;
+  padding: 5px;
+  color: #fff;
+  font-size: 13px;
+  display: inline;
+  background: #42a5f5;
+  border-radius: 5px;
+  position: absolute;
+  text-align: center;
+}
+</style>
+<!--JAVA SCRIPT POP UP INFORMASI-->
+<script>
+function httpskiosidbukaolshopsiteakunlogin() {
+  document.getElementById("info").style.width = "95%";
+}
+function httpskiosidbukaolshopsite() {
+  document.getElementById("info").style.width = "0";
+}
+</script>
+
+<script>
+function httpkiosidbukaolshopsiteakunlogin() {
+  document.getElementById("info2").style.width = "85%";
+}
+function httpkiosidbukaolshopsite() {
+  document.getElementById("info2").style.width = "0";
+}
+</script>
+<!---Sip--->
+
+
+<!--INFORMASI-->
+<div id="info" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="httpskiosidbukaolshopsite()"><b>X</b></a>
+  </br>
+  <p style="margin-left:20px;margin-top: 0px;margin-bottom: 1px;font-weight: bold;font-family: 'Urbanist', sans-serif;color: #fff;font-size: 17px;">Metode Deposit</p>
+<p style="margin-left:20px;margin-top: 3px;margin-bottom: 15px;font-family: arial;color: #fff;font-size:8px;">Silahkan Pilih Salah Satu Metode Deposit Berikut</p>
+
+<div class="kiosid">  
+    <a href="https://forturshop.jualan.me/akun/?page=topup"> 
+     <div class="daftar" style="margin-top: 0px;"> 
+      <img class="gambarlist" src="https://upload.cc/i4/RyhbV.png"> 
+      <div class="list">
+      Bank Transfer
+      </div> 
+      <div class="harga">
+       Online
+      </div> 
+     </div></a>
+     
+     <a href="https://forturshop.jualan.me/digital/95175"> 
+     <div class="daftar" style="margin-top: 0px;"> 
+      <img class="gambarlist" src="https://upload.cc/i4/u01qv.png"> 
+      <div class="list">
+      Deposit Qris 
+      </div> 
+      <div class="harga">
+       Online
+      </div> 
+     </div></a>
+    
+     <a href="https://wa.me/6281313402105"> 
+     <div class="daftar" style="margin-top: 0px;"> 
+      <img class="gambarlist" src="https://upload.cc/i4/TAafu.png"> 
+      <div class="list">
+      Komplain Deposit
+      </div> 
+      <div class="harga2">
+       Bantuan
+      </div> 
+     </div></a>
+     
+</p>
+</div>
+</div>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+    
+<!--JAVA SCRIPT POP UP INFORMASI-->
+<script>
+function httpskiosidbukaolshopsiteakunlogin() {
+  document.getElementById("info").style.width = "100%";
+}
+function httpskiosidbukaolshopsite() {
+  document.getElementById("info").style.width = "0";
+}
+</script>
+
+<script>
+function httpkiosidbukaolshopsiteakunlogin() {
+  document.getElementById("info2").style.width = "85%";
+}
+function httpkiosidbukaolshopsite() {
+  document.getElementById("info2").style.width = "0";
+}
+</script>
+<!--  -->
+</div>
+</div>
+</head>
+</html>
+<body>
+
+<!--WARNA BELAKANG BAR QRIS-->
+<div style="z-index: 0; background:#26a69a;
+background: linear-gradient(#283593,#283593); position: absolute;width: 100%;height: 95px;top:0;border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;"><br><br></div>
+
+
+
+
+<!--SLIDE-->
+<div class="mdr-container" style="margin-top:0px;padding-top:0px;
+padding-bottom:0px">
+
+<script src="https://rawcdn.githack.com/modernplay/hostfile/f1a50044e552a32247eb808f8876abbb6bc12554/jssor.slider-kat.min.js" type="text/javascript">/*kiosid*/</script>
+<script type="text/javascript">
+    window.jssor_1_slider_init = function(){
+    var jssor_1_options = {
+    $AutoPlay: 1,
+    $SlideWidth: 780,
+    $SlideHeight: 320,
+    $SlideSpacing: 25,
+};
+
+    var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+    var MAX_WIDTH = 0;
+    function ScaleSlider() {
+    var containerElement = jssor_1_slider.$Elmt.parentNode;
+    var containerWidth = containerElement.clientWidth;
+    if (containerWidth) {
+    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, 						containerWidth);jssor_1_slider.$ScaleWidth(expectedWidth);}
+    else {
+    window.setTimeout(ScaleSlider, 0);}
+}
+    ScaleSlider();
+      $Jssor$.$AddEvent(window, "load", ScaleSlider);
+      $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+      $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+        };
+</script>
+
+<style>
+
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+		@keyframes jssorl-009-spin{
+            from { transform: rotate(0deg);}
+            to { transform: rotate(360deg);}
+		}	
+		.img-slide {
+			border-radius: 30px;
+			
+           
+        }
+    </style>
+    
+<style>	.box2 {
+				background-color:#f3f3f3;
+				color: #000;
+				font-family: "Poppins";
+				border-radius: 10px;
+				border: 1px solid rgb (233,233,233),;
+				padding: 1%;
+				margin: 15px;
+				margin-left:8px;
+				margin-bottom:10px;
+				width: 96%;
+				height: 22px;
+				float: left;
+				font-size: 10px;
+				position: relative;
+				z-index: 2;
+				overflow: none;
+				}        
+.imgicon {
+				border-radius: 100px;
+				width: 6%;
+				height: 17px;
+				padding: 0px;
+				background-color: #fff;
+				float: left;
+				margin-top: 0px;
+				} 
+marquee {
+  color: #000000;
+  font-family:'arial', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 65px;
+  height: 40px;>
+  text-align: left;
+  margin-top: -30px;
+  margin-bottom: 0px;
+  border-radius: 5px;
+  width: 80%
+}				  
+</style>
+
+
+<div id="jssor_1" 
+style="
+  position:relative;
+  margin:0 auto;'
+  margin-top:10px;
+  margin-bottom:-11px;
+  top:20px;
+  left:0px;
+  width:900.1px;
+  visibility:hidden;">
+
+
+<div data-u="loading" >
+
+</div>
+
+<div data-u="slides" style="cursor:default;position:relative;left:0px;width:900px;height:320px;">
+
+<!----text berjalan---->
+
+<!--GAMBAR SLIDE-->
+<div>
+<a href="#"><img class="img-slide" data-u="image" src="https://i.ibb.co/Ry3bpdp/IMG-20220414-234001-748.png" /></a></div>
+
+<div>
+<a href="#"><img class="img-slide" data-u="image" src="https://i.ibb.co/DrrwKk2/20220416-022904.jpg" /></a></div>
+
+<div>
+<a href="#"><img class="img-slide" data-u="image" src="https://i.ibb.co/q0q3Bf6/20220416-023026.jpg" /></a></div>
+
+
+
+</div>
+</div>
+
+<script type="text/javascript">jssor_1_slider_init();
+</script>
+</div>
+
+<br>
+
+
+      
+    </div>            </div>
+<p class="tittle" style="margin-top:15px;">Isi Ulang</p>
+<center>
+				
+				
+				
+				<button class="button"><a href="https://forturshop.jualan.me/digital/134665"><img class="image" src="https://i.ibb.co/CB5T1qK/20220416-024648.png"></a>Pulsa Reguler</button>
+
+
+
+
+
+<button class="button"><a href="#"><img class="image" src="https://i.ibb.co/c6L153Y/20220416-025126.png"></a>Pulsa Transfer</button>
+
+
+
+<button class="button"><a href="#"><img class="image" src="https://i.postimg.cc/63ZPQM4t/20220416-030607.png"></a>Paket Data</button>
+
+
+<button class="button"><a href="#"><img class="image" src="https://i.postimg.cc/8zFmDj6V/20220416-025837.png"></a>Paket Telepon</button>
+
+
+<button class="button"><a href="#"><img class="image" src="https://i.ibb.co/P1FGZpk/20220416-030105.png"></a>Paket Sms</button>
+
+
+<button class="button"><a href="#"><img class="image" src="https://i.postimg.cc/sgXs2Rjz/20220416-031644.png"></a>Token Listrik</button>
+
+
+
+
+
+<button class="button"><a href="#"><img class="image" src="https://i.postimg.cc/1tb3nGcy/20220416-045920.png"></a>Voucher Game</button>
+
+
+
+<button class="button"><a href="#"><img class="image" src="https://i.postimg.cc/bY55K6L6/20220416-044834.png"></a>Dompet Digital</button>
+
+
+</div></div></div></div>
+
+
+
+</center>
+
+
+<div class="mybutton">
+<p class="tittle" style="margin-top: 10px;">Marketplace</p>
+
+<center>
+<center>
+				
+				<a href="#">
+<button class="button"><img class="image" src="https://i.postimg.cc/BQP4PPXv/20220416-052037.png">PLN Pascabayar</button></a>
+
+<a href="#">
+<button class="button"><img class="image" src="https://i.postimg.cc/htGwQHC1/20220416-052506.png">Indihome</button></a>
+
+
+
+<a href="#">
+<button class="button"><img class="image" src="https://i.postimg.cc/ncWKTgFk/20220416-052817.png">BPJS Kesehatan</button></a>
+
+
+
+<a href="#">
+<button class="button"><img class="image" src="https://i.postimg.cc/D08JXfXK/20220416-053004.png">Gas PGN</button></a>
+
+<a href="#">
+<button class="button"><img class="image" src="https://i.postimg.cc/rwnpS2qV/20220416-053449.png">TelkomPSTN</button></a>
+
+<a href="#">
+<button class="button"><img class="image" src="https://i.postimg.cc/dVK2zdCk/20220416-054113.png">Pulsa Pascabayar</button></a>
+
+<a href="#">
+<button class="button"><img class="image" src="https://i.postimg.cc/nrbWgrGH/20220416-042746.png">TV Pascabayar</button></a>
+
+<a href="#">
+<button class="button"><img class="image" src="https://i.postimg.cc/3JXxNDyH/20220416-045519.png">Segera Hadir</button></a>
+
+
+</div>
+</center>
+
+
+
+
+<br>
+
+
+<br>
+
+
+ 
+
+
+
+
+
+
+    </section>
+ <!-- Letakkan script dibagian paling bawah halaman -->
+    <script type="text/javascript">
+      function rubah(angka){
+        var reverse = angka.toString().split('').reverse().join(''),
+        ribuan = reverse.match(/\d{1,3}/g);
+        ribuan = ribuan.join('.').split('').reverse().join('');
+        return " Rp. "+ribuan;
+      }
+      document.getElementById("saldo_user").innerText=rubah(document.getElementById("saldo_user").textContent);
+    </script>
+    <script>
+        console.log("Shopee : storeidofficial");
+        console.log("Telegram : @STOREIDOFFICIAL");
+console.info("YouTube : STORE ID");
+console.info("Beli Script DiKami Saya Jamin Murah");
+    </script>
+</body>
+</html> 
+
